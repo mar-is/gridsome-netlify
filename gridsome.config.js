@@ -31,6 +31,18 @@ module.exports = {
 			}
 		},
 		{
+			use: "@gridsome/source-filesystem",
+			options: {
+				path: "authors/**/*.md",
+				typeName: "Authors",
+				remark: {
+					plugins: [
+						// ...local plugins
+					]
+				}
+			}
+		},
+		{
 			use: "@gridsome/source-faker",
 			options: {
 				numNodes: 100
