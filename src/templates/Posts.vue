@@ -3,7 +3,7 @@
 		<div class="articlePage">
 			<div
 				class="articlePage__img"
-				:style="{ 'background-image': 'url(' + $page.article.image + ')' }"
+				
 			></div>
 			<div class="container container--article">
 				<g-link to="/" class="back"
@@ -23,10 +23,10 @@
 						></path></svg
 					>Back</g-link
 				>
-				<h1 class="articlePage__title">{{ $page.article.title }}</h1>
+				<!-- <h1 class="articlePage__title">{{ $page.article.title }}</h1> -->
 				<!-- <p>{{ $page.article.author.name }}</p> -->
-				<p>{{ $page.article.date }}</p>
-				<div v-html="$page.article.content"></div>
+				<!-- <p>{{ $page.article.date }}</p> -->
+				<!-- <div v-html="$page.article.content"></div> -->
 			</div>
 		</div>
 	</Layout>
@@ -43,6 +43,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
+//:style="{ 'background-image': 'url(' + $page.article.image + ')' }"
 export default {
 	components: {},
 	metaInfo() {
