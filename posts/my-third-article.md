@@ -2,6 +2,8 @@
 title: My Third Article
 excerpt: '-'
 date: 2020-04-02T09:19:04.448Z
+abstract: |-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 content: >-
   \---Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
