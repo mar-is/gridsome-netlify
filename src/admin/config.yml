@@ -22,6 +22,7 @@ collections:
           widget: "relation",
           collection: "authors",
           searchFields: ["name"],
+          valueField: name
           displayFields: ["name"],
         }
       - { label: "Featured Image", "name": "image", widget: "image" }
