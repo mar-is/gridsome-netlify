@@ -28,6 +28,7 @@ collections:
       - { label: "Featured Image", "name": "image", widget: "image" }
   - name: "authors"
     label: "Authors"
+    widget: list
     folder: "authors"
     create: true
     fields:
