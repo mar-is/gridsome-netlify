@@ -13,9 +13,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Abstract", name: "abstract", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Content", name: "content", widget: "markdown" }
       - {
           label: "Author",
           name: "author",
@@ -25,8 +22,10 @@ collections:
           valueField: "name",
           displayFields: ["name"],
         }
+      - { label: "Abstract", name: "abstract", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Content", name: "content", widget: "markdown" }
       - { label: "Featured Image", "name": "image", widget: "image" }
-
   - name: "authors"
     label: "Authors"
     folder: "authors"
