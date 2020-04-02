@@ -12,25 +12,28 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "ID", name: "id", widget: "id" }
       - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Author",
-          name: "author",
-          widget: "relation",
-          collection: "authors",
-          searchFields: ["name"],
-          valueField: "name",
-          displayFields: ["name"],
-        }
       - { label: "Abstract", name: "abstract", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Content", name: "content", widget: "markdown" }
       - { label: "Featured Image", "name": "image", widget: "image" }
+      - label: "Author",
+        name: "author",
+        widget: "relation",
+        collection: "authors",
+        searchFields: ["name"],
+        valueField: "name",
+        displayFields: ["name"]
+
   - name: "authors"
     label: "Authors"
     widget: list
     folder: "authors"
     create: true
+    slug: "{{slug}}"
+    identifier_field: "name"
     fields:
+      - { label: "ID", name: "id", widget: "id" }
       - { label: "Name", name: "fullName", widget: "string" }
       - { label: "Age", name: "age", widget: "string" }

@@ -21,8 +21,8 @@ module.exports = {
 		{
 			use: "@gridsome/source-filesystem",
 			options: {
-				path: "posts/**/*.md",
-				typeName: "Posts",
+				path: "authors/**/*.md",
+				typeName: "Authors",
 				remark: {
 					plugins: [
 						// ...local plugins
@@ -33,8 +33,11 @@ module.exports = {
 		{
 			use: "@gridsome/source-filesystem",
 			options: {
-				path: "authors/**/*.md",
-				typeName: "Authors",
+				path: "posts/**/*.md",
+				typeName: "Posts",
+				refs: {
+					author: "Authors"
+				},
 				remark: {
 					plugins: [
 						// ...local plugins
