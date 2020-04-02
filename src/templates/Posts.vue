@@ -32,7 +32,12 @@
 	</Layout>
 </template>
 
-<page-query>
+
+
+<script>
+//:style="{ 'background-image': 'url(' + $page.article.image + ')' }"
+/**
+ * <page-query>
 query ($path: String!) {
   article: posts (path: $path) {
     title
@@ -41,9 +46,7 @@ query ($path: String!) {
   }
 }
 </page-query>
-
-<script>
-//:style="{ 'background-image': 'url(' + $page.article.image + ')' }"
+ */
 export default {
 	components: {},
 	metaInfo() {

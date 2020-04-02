@@ -2,26 +2,26 @@
 	<Layout>
 		<div class="container">
 			<h1>List articles</h1>
-			<div
+			<!-- <div
 				v-for="article in $page.articles.edges"
 				:key="article.id"
 				class="article d-flex"
-			>
-				<div
-					class="article__img"
-					:style="{ 'background-image': 'url(' + article.node.image + ')' }"
-				></div>
-				<div class="article__body">
-					<g-link :to="article.node.path" class="article__link"></g-link>
-					<h1 class="article__title">{{ article.node.title }}</h1>
-					<p class="article__abstract">{{ article.node.abstract }}</p>
-				</div>
+			> -->
+			<div class="article__img"></div>
+			<div class="article__body">
+				<!-- <g-link :to="article.node.path" class="article__link"></g-link> -->
+				<!-- <h1 class="article__title">{{ article.node.title }}</h1> -->
+				<!-- <p class="article__abstract">{{ article.node.abstract }}</p> -->
+				<!-- </div> -->
 			</div>
 		</div>
 	</Layout>
 </template>
 
-<page-query>
+<script>
+//:style="{ 'background-image': 'url(' + article.node.image + ')' }"
+/**
+ * <page-query>
 query {
   articles: allPosts {
     edges {
@@ -35,8 +35,7 @@ query {
   }
 }
 </page-query>
-
-<script>
+ */
 export default {
 	metaInfo: {
 		title: "My blog"
