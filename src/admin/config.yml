@@ -8,7 +8,7 @@ public_folder: "/uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "../posts"
+    folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
@@ -17,4 +17,4 @@ collections:
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Content", name: "content", widget: "markdown" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Featured Image", "name": "thumb", widget: "image" }
+      - { label: "Featured Image", "name": "image", widget: "image" }
