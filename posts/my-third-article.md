@@ -1,5 +1,5 @@
 ---
-title: My third Article
+title: My Third Article
 excerpt: '-'
 date: 2020-04-02T09:19:04.448Z
 content: >-
