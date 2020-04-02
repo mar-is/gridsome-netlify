@@ -18,13 +18,15 @@ collections:
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Content", name: "content", widget: "markdown" }
       - { label: "Featured Image", "name": "image", widget: "image" }
-      - label: "Author",
-        name: "author",
-        widget: "relation",
-        collection: "authors",
-        searchFields: ["name"],
-        displayFields: ["name"],
-        valueField: "id",
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          collection: "authors",
+          searchFields: ["name"],
+          displayFields: ["name"],
+          valueField: "id",
+        }
 
   - name: "authors"
     label: "Authors"
