@@ -31,6 +31,12 @@ module.exports = {
 			}
 		},
 		{
+			use: "@gridsome/source-faker",
+			options: {
+				numNodes: 100
+			}
+		},
+		{
 			use: `gridsome-plugin-netlify-cms`,
 			options: {
 				publicPath: `/admin`
