@@ -23,7 +23,7 @@ collections:
         widget: "relation",
         collection: "authors",
         searchFields: ["name"],
-        displayFields: ["name"]
+        displayFields: ["name"],
         valueField: "id",
 
   - name: "authors"
