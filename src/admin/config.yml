@@ -18,3 +18,9 @@ collections:
       - { label: "Content", name: "content", widget: "markdown" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Featured Image", "name": "image", widget: "image" }
+ - name: "authors"
+   label: "Authors"
+   create: true
+   fields:
+    - {label: "Name", name: "fullName", widget: "string"}
+    - {label: "Age", name: "age", widget: "string"}
