@@ -24,7 +24,7 @@
 					>Back</g-link
 				>
 				<h1 class="articlePage__title">{{ $page.article.title }}</h1>
-				<p>{{ $page.article.author.name }}</p>
+				<!-- <p>{{ $page.article.author.name }}</p> -->
 				<p>{{ $page.article.date }}</p>
 				<div v-html="$page.article.content"></div>
 			</div>
@@ -37,9 +37,6 @@ query ($path: String!) {
   article: posts (path: $path) {
     title
     content
-    author {
-			name
-		}
     image
   }
 }
