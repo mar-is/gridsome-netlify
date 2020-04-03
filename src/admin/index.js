@@ -28,7 +28,7 @@ const IdControl = React.createClass({
 /**
  * Create the preview widget, this will display the widgets value in the NetlifyCMS preview pane
  */
-const IdPreview = window.createClass({
+const IdPreview = React.createClass({
 	getInitialState: function() {
 		console.log(this.props);
 		return {};
