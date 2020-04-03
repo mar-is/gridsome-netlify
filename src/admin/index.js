@@ -2,10 +2,11 @@ import CMS from "netlify-cms-app";
 
 import uuid from "uuid/v4";
 
+console.log("LOADED");
 /**
  * Create the control widget, this will add a form element to the cms UI
  */
-const IdControl = window.createClass({
+const IdControl = createClass({
 	getInitialState: function() {
 		return {};
 	},
@@ -32,7 +33,7 @@ const IdPreview = window.createClass({
 		return {};
 	},
 	render: function() {
-		return window.h("p", null, `ID: ${this.props.value}`);
+		return h("p", null, `ID: ${this.props.value}`);
 	}
 });
 

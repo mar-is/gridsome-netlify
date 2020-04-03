@@ -39,6 +39,10 @@ query {
 export default {
 	metaInfo: {
 		title: "My blog"
+	},
+
+	mounted() {
+		console.log(window.h)
 	}
 };
 </script>
