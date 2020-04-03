@@ -34,9 +34,9 @@ const IdPreview = window.createClass({
 		return {};
 	},
 	render: function() {
-		return React.h("p", null, `ID: ${this.props.value}`);
+		return React.render("p", null, `ID: ${this.props.value}`);
 	}
 });
 
 // Register the widget. This lets NetlifyCMS know about our custom widget
-CMS.registerWidget("id", IdControl, IdPreview);
+CMS.registerWidget("id", IdControl, [IdPreview]);
