@@ -1,4 +1,5 @@
 import CMS from "netlify-cms-app";
+import React from 'react';
 
 import uuid from "uuid/v4";
 
@@ -6,7 +7,7 @@ console.log("LOADED");
 /**
  * Create the control widget, this will add a form element to the cms UI
  */
-const IdControl = createClass({
+const IdControl = React.createClass({
 	getInitialState: function() {
 		return {};
 	},
@@ -33,7 +34,7 @@ const IdPreview = window.createClass({
 		return {};
 	},
 	render: function() {
-		return h("p", null, `ID: ${this.props.value}`);
+		return React.h("p", null, `ID: ${this.props.value}`);
 	}
 });
 

@@ -42,7 +42,7 @@ export default {
 	},
 
 	mounted() {
-		console.log(window.h)
+		console.log(Object.keys(window.createClass()))
 	}
 };
 </script>
