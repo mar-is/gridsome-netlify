@@ -1,4 +1,5 @@
-import CMS from "netlify-cms";
+import CMS from 'netlify-cms-app'
+
 import uuid from "uuid/v4";
 
 /**
